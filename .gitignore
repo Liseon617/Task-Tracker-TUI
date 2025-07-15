@@ -1,0 +1,41 @@
+# Binaries and build outputs
+/bin/
+/dist/
+/out/
+*.exe
+*.so
+*.dll
+*.test
+
+# Dependency directories
+/vendor/
+/go.sum
+
+# Go workspace file
+go.work
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Debug files
+debug
+*.log
+
+# Test coverage files
+coverage.out
+coverage.html
+
+# Local development tools
+air.conf
