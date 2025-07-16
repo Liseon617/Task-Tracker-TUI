@@ -86,11 +86,13 @@ func (m *Pomodoro) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if m.state != PomodoroEditing {
 				return m.editDurations()
 			}
-		case "ctrl+c", "esc", "q":
+		case "esc", "q":
 			if m.state == PomodoroEditing {
 				return m.cancelEdit()
 			}
 			return Models[MainModel], nil
+		case  "ctrl+c":
+			return m, tea.Quit
 		case "tab":
 			if m.state == PomodoroEditing {
 				if m.currentInput == &m.workInput {
