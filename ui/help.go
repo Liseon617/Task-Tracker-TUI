@@ -16,7 +16,7 @@ c+c Clear tasks	  t: Pomodoro timer	  esc/q/ctrl+c: Quit
 func RenderPomodoroHelp() string {
 	return helpStyle.Render(`
 Controls: 
-s: Start   p: Pause   x: Stop
+s: Start   p: Unpause/Pause   x: Stop
 e: Edit   esc/q: Back   ctrl+c: Quit`,
-)
+	)
 }
